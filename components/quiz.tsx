@@ -246,7 +246,10 @@ function PickOptionGrid(props: PickOptionGridProps) {
         </h2>
 
         {props.question.imageUrl && (
-          <img className="rounded mx-auto mb-4" src={props.question.imageUrl} />
+          <img
+            className="rounded mx-auto mb-4 max-h-[200px]"
+            src={props.question.imageUrl}
+          />
         )}
 
         <div className="grid grid-cols-2 w-fit mx-auto gap-2">
@@ -268,7 +271,10 @@ function PickOptionGrid(props: PickOptionGridProps) {
         </h2>
 
         {props.question.imageUrl && (
-          <img className="rounded mx-auto mb-4" src={props.question.imageUrl} />
+          <img
+            className="rounded mx-auto mb-4 max-h-[200px]"
+            src={props.question.imageUrl}
+          />
         )}
 
         {props.question.options.map((option) => (
