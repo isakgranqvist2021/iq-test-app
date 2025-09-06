@@ -19,6 +19,7 @@ export function Quiz(props: QuizProps) {
   const [currentQuestionIndex, setCurrentQuestionIndex] = React.useState(
     props.results.result.length,
   );
+  const [isLoading, setIsLoading] = React.useState(false);
 
   if (currentQuestionIndex >= props.quiz.questions.length) {
     return (
@@ -32,6 +33,9 @@ export function Quiz(props: QuizProps) {
   const question = props.quiz.questions[currentQuestionIndex];
 
   const selectOption = async (option: Option) => {
+    if (isLoading) return;
+    setIsLoading(true);
+
     const quizResultItem: QuizResultItem = {
       questionId: question.id,
       selectedOptionId: option.id,
@@ -49,6 +53,8 @@ export function Quiz(props: QuizProps) {
         method: 'PUT',
       });
     }
+
+    setIsLoading(false);
   };
 
   return (
@@ -204,7 +210,7 @@ interface ImageOptionProps {
 function ImageOptionCard(props: ImageOptionProps) {
   return (
     <div
-      className="hover:cursor-pointer outline outline-transparent hover:outline-primary rounded"
+      className="hover:cursor-pointer outline outline-4 outline-transparent hover:outline-primary rounded p-2"
       onClick={() => props.onClick(props.option)}
     >
       <img
@@ -240,7 +246,7 @@ interface PickOptionGridProps {
 function PickOptionGrid(props: PickOptionGridProps) {
   if (props.question.type === 'images') {
     return (
-      <div>
+      <div className="flex flex-col gap-4 w-fit mx-auto items-center">
         <h2 className="text-center text-xl font-medium mb-4">
           {props.question.description}
         </h2>
@@ -265,7 +271,7 @@ function PickOptionGrid(props: PickOptionGridProps) {
     );
   } else {
     return (
-      <div className="flex flex-col gap-2 w-fit mx-auto items-center">
+      <div className="flex flex-col gap-4 w-fit mx-auto items-center">
         <h2 className="text-center text-xl font-medium mb-4">
           {props.question.description}
         </h2>

@@ -1784,14 +1784,6 @@ export const iqQuiz: QuizModel = {
       ],
     },
     {
-      type: 'text',
-      id: 61,
-      description:
-        'Which numbers should replace the question marks on the bottom row?',
-      imageUrl: '/T1-105-public/media/62.png',
-      options: [],
-    },
-    {
       type: 'images',
       id: 62,
       description: '',
@@ -1934,9 +1926,9 @@ export const iqQuiz: QuizModel = {
     {
       type: 'images',
       id: 67,
-      description: '',
-      imageUrl:
-        '/T1-105-public/media/68.png When the above is folded to form a cube, which is the only one of the following that can be produced?',
+      description:
+        'When the above is folded to form a cube, which is the only one of the following that can be produced?',
+      imageUrl: '/T1-105-public/media/68.png',
       options: [
         {
           id: 1,
@@ -1968,9 +1960,9 @@ export const iqQuiz: QuizModel = {
     {
       type: 'images',
       id: 68,
-      description: '',
-      imageUrl:
-        '/T1-105-public/media/69.pngWhen the above is folded to form a cube, which is the only one of the following that *can* be produced?',
+      description:
+        'When the above is folded to form a cube, which is the only one of the following that *can* be produced?',
+      imageUrl: '/T1-105-public/media/69.png',
       options: [
         {
           id: 1,
@@ -1998,14 +1990,6 @@ export const iqQuiz: QuizModel = {
           imageUrl: '/T1-105-public/media/69E.png',
         },
       ],
-    },
-    {
-      type: 'text',
-      id: 69,
-      description:
-        'Which three of the four pieces below can be fitted together to form a perfect square?',
-      imageUrl: '/T1-105-public/media/70.png',
-      options: [],
     },
     {
       type: 'images',
@@ -2965,3 +2949,410 @@ export const iqQuiz: QuizModel = {
     },
   ],
 };
+
+export const iqQuizAnswers = [
+  {
+    answer: [4],
+    hint: null,
+  },
+  {
+    answer: [3],
+    hint: null,
+  },
+  {
+    answer: [3],
+    hint: null,
+  },
+  {
+    answer: [5],
+    hint: 'Rotate',
+  },
+  {
+    answer: [2],
+    hint: null,
+  },
+  {
+    answer: [2],
+    hint: 'Rotate 45 degree',
+  },
+  {
+    answer: [2],
+    hint: null,
+  },
+  {
+    answer: [3],
+    hint: 'Vertical symmetry',
+  },
+  {
+    answer: [1],
+    hint: 'Rotate 90 degree',
+  },
+  {
+    answer: [1],
+    hint: 'delete point',
+  },
+  {
+    answer: [2],
+    hint: 'delete semicircle',
+  },
+  {
+    answer: [3],
+    hint: 'Remove the innermost graphic',
+  },
+  {
+    answer: [5],
+    hint: 'The upper and lower graphs change position',
+  },
+  {
+    answer: [3],
+    hint: 'Move the smaller graphic',
+  },
+  {
+    answer: [3],
+    hint: 'bilateral symmetry',
+  },
+  {
+    answer: [2],
+    hint: 'Symmetrical and color',
+  },
+  {
+    answer: [4],
+    hint: 'Rotate 90 degree',
+  },
+  {
+    answer: [2],
+    hint: 'delete the point',
+  },
+  {
+    answer: [4],
+    hint: 'copy a graphic',
+  },
+  {
+    answer: [4],
+    hint: 'Remove the innermost graphic',
+  },
+  {
+    answer: [3],
+    hint: 'Vertical symmetry',
+  },
+  {
+    answer: [1],
+    hint: 'Vertical symmetry',
+  },
+  {
+    answer: [3],
+    hint: 'Swap two graphics positions',
+  },
+  {
+    answer: [1],
+    hint: 'The intersection of white graphics',
+  },
+  {
+    answer: [1],
+    hint: 'Go together with differences',
+  },
+  {
+    answer: [3],
+    hint: 'The number of segments is the same',
+  },
+  {
+    answer: [4],
+    hint: 'The odd column moves down and the even column moves up',
+  },
+  {
+    answer: [1],
+    hint: 'Turn 90 degrees clockwise',
+  },
+  {
+    answer: [3],
+    hint: 'The same type of graphics',
+  },
+  {
+    answer: [3],
+    hint: 'P12-&gt;P21-&gt;P33,with horizontal symmetry',
+  },
+  {
+    answer: [1],
+    hint: 'The categories that make up the drawing are the same',
+  },
+  {
+    answer: [1],
+    hint: 'graph A and graphic B constitute a new graphics',
+  },
+  {
+    answer: [3],
+    hint: 'Vertical relationship',
+  },
+  {
+    answer: [1],
+    hint: 'The number of graphics types per row is 2, and the number of graphics types per column is 3',
+  },
+  {
+    answer: [3],
+    hint: 'Three strokes are required to draw the graph',
+  },
+  {
+    answer: [2],
+    hint: 'The number of graphic elements is incremented',
+  },
+  {
+    answer: [4],
+    hint: 'The number of edges is 12',
+  },
+  {
+    answer: [1],
+    hint: 'The black square moves clockwise, and the number of movement steps increases',
+  },
+  {
+    answer: [1],
+    hint: 'The number of intersections increases',
+  },
+  {
+    answer: [4],
+    hint: 'Plane to form a three-dimensional graphics',
+  },
+  {
+    answer: [4],
+    hint: 'Plane to form a three-dimensional graphics',
+  },
+  {
+    answer: [4],
+    hint: 'The overlapping graphics are the same',
+  },
+  {
+    answer: [4],
+    hint: 'The first graph is split into two graphs',
+  },
+  {
+    answer: [1],
+    hint: 'Horizontal symmetry',
+  },
+  {
+    answer: [1],
+    hint: 'Combination of graph A rotates 90 degrees clockwise and graph B rotates counterclockwise by 90 degrees',
+  },
+  {
+    answer: [4],
+    hint: 'Horizontal axis symmetry',
+  },
+  {
+    answer: [3],
+    hint: 'The plan view is transformed into a three-dimensional figure',
+  },
+  {
+    answer: [4],
+    hint: 'Circles increase in number, alternating white and black circles',
+  },
+  {
+    answer: [3],
+    hint: 'Turn 90 degrees clockwise',
+  },
+  {
+    answer: [4],
+    hint: 'The left side contains four sections and the right side contains five sections',
+  },
+  {
+    answer: [1],
+    hint: 'graph B and graphic C constitute graph A',
+  },
+  {
+    answer: [3],
+    hint: 'Find the intersection of graphs A and B.',
+  },
+  {
+    answer: [2],
+    hint: 'The number of closed figures increases',
+  },
+  {
+    answer: [1],
+    hint: 'Contains four elements and must contain five-pointed stars',
+  },
+  {
+    answer: [2],
+    hint: 'The number of lines is 3, and the number of intersections between the internal and external graphics is 3',
+  },
+  {
+    answer: [2],
+    hint: 'The number of closed graphics increases',
+  },
+  {
+    answer: [1],
+    hint: 'The plan view is transformed into a three-dimensional figure',
+  },
+  {
+    answer: [1],
+    hint: 'Four upward triangles, and five downward triangles',
+  },
+  {
+    answer: [1],
+    hint: 'The number of closed intervals into the arithmetic sequence-reasoning',
+  },
+  {
+    answer: [4],
+    hint: 'English letters can be written in one stroke',
+  },
+  {
+    answer: [1],
+    hint: 'Looking for the law of black and white',
+  },
+  {
+    answer: [4],
+    hint: 'Each category retains only one graphic',
+  },
+  {
+    answer: [2],
+    hint: 'The raised portion makes up the recessed portion',
+  },
+  {
+    answer: [4],
+    hint: 'The previous two graphs added and removed the same part',
+  },
+  {
+    answer: [3],
+    hint: 'The outer arc rotates clockwise and the inner arc rotates counterclockwise',
+  },
+  {
+    answer: [5],
+    hint: null,
+  },
+  {
+    answer: [5],
+    hint: null,
+  },
+  {
+    answer: [1],
+    hint: 'only lines and symbols that appear just twice in the outer circles appear in the inner circle',
+  },
+  {
+    answer: [1],
+    hint: null,
+  },
+  {
+    answer: [3],
+    hint: '4=4\\*8-4\\*7；40=6\\*9-2\\*7；3\\*9-4\\*6=3.',
+  },
+  {
+    answer: [2],
+    hint: '3\\*9+5=32, 6\\*8+7=55, 5\\*7+9=44.',
+  },
+  {
+    answer: [2],
+    hint: '6\\*12/8=9, 4\\*16/8=8, 2\\*28/8=7.',
+  },
+  {
+    answer: [2],
+    hint: '3+2+8-5=8.',
+  },
+  {
+    answer: [2],
+    hint: null,
+  },
+  {
+    answer: [1],
+    hint: null,
+  },
+  {
+    answer: [2],
+    hint: '2=7-5=5-3；4=9-5=5-1；2=8-6=6-4.',
+  },
+  {
+    answer: [2],
+    hint: '7\\*8=56，8\\*9=72，3\\*7=21.',
+  },
+  {
+    answer: [3],
+    hint: '16\\*16=256,17\\*17=289,19\\*19=361.',
+  },
+  {
+    answer: [2],
+    hint: '8=3+5,8=6+2,1+2=3。',
+  },
+  {
+    answer: [2],
+    hint: null,
+  },
+  {
+    answer: [3],
+    hint: '78\\*2+29\\*3=243;16\\*2+14\\*3=74; 32\\*2+22\\*3=130。',
+  },
+  {
+    answer: [1],
+    hint: null,
+  },
+  {
+    answer: [3],
+    hint: null,
+  },
+  {
+    answer: [1],
+    hint: null,
+  },
+  {
+    answer: [2],
+    hint: 'start at the bottom left-hand corner square and work along the bottom row, then back along the next row up etc, repeating the number 38219',
+  },
+  {
+    answer: [2],
+    hint: null,
+  },
+  {
+    answer: [3],
+    hint: '4+2+3=9， 7+6+3=16； 4\\*7\\*3=84, 2\\*6\\*3=36.',
+  },
+  {
+    answer: [5],
+    hint: 'the number of white dots is increased by one each time, both vertically and horizontally,and all white dots are connected.',
+  },
+  {
+    answer: [2],
+    hint: 'line across proceed +2,-3,+2,Lines down proceed -3,+2,-3',
+  },
+  {
+    answer: [1],
+    hint: '(7+8)\\*5=75',
+  },
+  {
+    answer: [2],
+    hint: 'in the line and columns,add the first three number to arrive at the fourth number',
+  },
+  {
+    answer: [1],
+    hint: 'each line across and down contains five black dots and four white dots',
+  },
+  {
+    answer: [1],
+    hint: 'the figure is tumbling 45<sup>o</sup> at each stage and alternates white/black/striped',
+  },
+  {
+    answer: [4],
+    hint: 'it contains a triangle ina circle, a circle in a triangle(with the same orientation of the triangle) and a black dot in a square',
+  },
+  {
+    answer: [3],
+    hint: '91/13=7',
+  },
+  {
+    answer: [1],
+    hint: 'it is the sum of the two digits (9+8) in the quadrant directly opposite',
+  },
+  {
+    answer: [3],
+    hint: '(73+25)/2',
+  },
+  {
+    answer: [4],
+    hint: 'the last two rows of figures repeat the first two rows of figures in reverse',
+  },
+  {
+    answer: [5],
+    hint: 'Only lines that appear three times in the same position in the first three squares are carried',
+  },
+  {
+    answer: [4],
+    hint: 'to each arc, add a quarter of a circle clockwise',
+  },
+  {
+    answer: [4],
+    hint: null,
+  },
+];

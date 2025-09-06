@@ -13,14 +13,14 @@ export default async function QuizResultsPage(
     return <div>Invalid test ID</div>;
   }
 
-  const quiz = await getQuizById(params.id);
+  const result = await getQuizById(params.id);
 
-  if (!quiz) {
-    return <div>Test not found</div>;
+  if (!result) {
+    return <div>Result not found</div>;
   }
 
-  if (quiz.status === 'paid') {
-    return <QuizResults />;
+  if (result.status === 'paid') {
+    return <QuizResults result={result} />;
   }
 
   return <BuyResults id={params.id} />;
