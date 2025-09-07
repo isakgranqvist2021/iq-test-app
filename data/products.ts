@@ -22,6 +22,7 @@ export type Question =
       description: string;
       imageUrl?: string;
       options: ImageOption[];
+      correctAnswer: number;
     }
   | {
       type: 'text';
@@ -29,6 +30,7 @@ export type Question =
       description: string;
       imageUrl?: string;
       options: TextOption[];
+      correctAnswer: number;
     };
 
 export interface QuizModel {
